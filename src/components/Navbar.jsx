@@ -1,7 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
+	const [linkSelected, setLinkSelected] = useState(false);
+	const [navLinkStyle, setNavLinkStyle] = useState('nav-link');
+
+	// const handleNavSelect = () => {
+	// 	setLinkSelected(true);
+	// };
+
+	// if (linkSelected === true) {
+	// 	setNavLinkStyle('nav-link-bold');
+	// } else setNavLinkStyle('nav-link');
+
 	return (
 		<div>
 			<header className='header' id='header'>
@@ -27,7 +38,7 @@ const Navbar = () => {
 							</Link>
 						</li>
 						<li>
-							<Link to='/work/' className='nav-link' id='nav-link'>
+							<Link to='/work/' className='nav-link' id='nav-work'>
 								Work
 							</Link>
 						</li>
