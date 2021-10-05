@@ -84,7 +84,7 @@ const Introduction = () => {
 					<div className='div-left-2'>
 						<p className='hi-2'>hobbies!</p>
 						<p className='intro-text-2'>
-							Outside of the world of programming and coding, I love to play music, I've playing the
+							Outside of the world of programming and coding, I love to play music, I've been playing the
 							drums for nearly 20 years and playing guitar for 10 now! I'm also a huge extreme
 							sports fan, I love skateboarding, snowboarding and skiing. Anything that gets keeps me
 							active and gets adrenaline going!

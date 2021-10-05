@@ -1,12 +1,15 @@
-import React from 'react';
-import Navbar from './Navbar';
-
 const Projects = () => {
 	return (
 		<div>
-			<Navbar />
 			<div className='parent-container'>
-				<div className='project-div'></div>
+				<div className='projects-div'>
+					<p>hello hello test test</p>
+				</div>
+			</div>
+			<div className='parent-container'>
+				<div className='projects-div'>
+					<p>hello hello test test</p>
+				</div>
 			</div>
 		</div>
 	);
