@@ -1,17 +1,12 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
-	const [linkSelected, setLinkSelected] = useState(false);
-	const [navLinkStyle, setNavLinkStyle] = useState('nav-link');
-
-	// const handleNavSelect = () => {
-	// 	setLinkSelected(true);
-	// };
-
-	// if (linkSelected === true) {
-	// 	setNavLinkStyle('nav-link-bold');
-	// } else setNavLinkStyle('nav-link');
+	const [linkSelected, setLinkSelected] = useState('/');
+	const [navHomeStyle, setNavHomeStyle] = useState('nav-link');
+	const [navProjectsStyle, setNavProjectsStyle] = useState('nav-link');
+	const [navWorkStyle, setNavWorkStyle] = useState('nav-link');
+	const [navContactStyle, setNavContactStyle] = useState('nav-link');
 
 	return (
 		<div>
@@ -28,24 +23,39 @@ const Navbar = () => {
 
 					<ul className='nav-links'>
 						<li>
-							<Link to='/' className='nav-link' id='nav-home'>
+							<NavLink to='/' className='nav-link' id='nav-home'>
 								Home
-							</Link>
+							</NavLink>
 						</li>
 						<li>
-							<Link to='/projects/' className='nav-link' id='nav-portfolio'>
+							<NavLink
+								activeClassName='nav-link-bold'
+								to='/projects/'
+								className='nav-link'
+								id='nav-portfolio'
+							>
 								Projects
-							</Link>
+							</NavLink>
 						</li>
 						<li>
-							<Link to='/work/' className='nav-link' id='nav-work'>
+							<NavLink
+								activeClassName='nav-link-bold'
+								to='/work/'
+								className='nav-link'
+								id='nav-work'
+							>
 								Work
-							</Link>
+							</NavLink>
 						</li>
 						<li>
-							<Link to='/contact/' className='nav-link' id='nav-contact'>
+							<NavLink
+								activeClassName='nav-link-bold'
+								to='/contact/'
+								className='nav-link'
+								id='nav-contact'
+							>
 								Contact
-							</Link>
+							</NavLink>
 						</li>
 					</ul>
 				</nav>

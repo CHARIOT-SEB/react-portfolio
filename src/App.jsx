@@ -1,4 +1,5 @@
 import './App.css';
+import { useState } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Introduction from './components/Introduction';
 import Navbar from './components/Navbar';
@@ -7,6 +8,7 @@ import Contact from './components/Contact';
 import Work from './components/Work';
 
 function App() {
+
 	return (
 		<div className='App'>
 			<BrowserRouter>
@@ -19,7 +21,7 @@ function App() {
 					<Route exact path='/projects'>
 						<Projects />
 					</Route>
-					
+
 					<Route exact path='/work/'>
 						<Work />
 					</Route>

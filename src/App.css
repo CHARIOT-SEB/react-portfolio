@@ -104,38 +104,18 @@ header {
 	width: 60em;
 	justify-content: space-between;
 }
-/* 
+
+.nav-link {
+  font-family: 'Montserrat';
+	text-decoration: none;
+	color: black;
+}
+
 .nav-link-bold {
   font-family: 'Montserrat';
 	text-decoration: none;
 	color: black;
-  font-weight: 700;
-} */
-
-.nav-links a:link {
-	font-family: 'Montserrat';
-	text-decoration: none;
-	color: black;
-}
-
-.nav-links a:visited {
-	font-family: 'Montserrat';
-	text-decoration: none;
-	color: black;
-}
-
-.nav-links a:hover {
-	font-family: 'Montserrat';
-	text-decoration: none;
-	font-size: 11px;
-	color: black;
-}
-
-.nav-links a:active {
-	font-family: 'Montserrat';
-	text-decoration: none;
-	color: black;
-
+  font-weight: bold;
 }
 
 .intro-quote-div {
@@ -275,8 +255,8 @@ mark {
 	letter-spacing: 2px;
 	position: absolute;
 	color: #353535;
-	top: 20px;
-	left: 570px;
+	top: 10px;
+	left: 540px;
 	text-transform: uppercase;
 	/* animation stuff */
 	transform: translateX(-360%);
@@ -363,6 +343,7 @@ mark {
 .react {
 	width: auto;
 	height: 90px;
+  margin-right: 15px;
 }
 
 .express-js {
@@ -411,7 +392,7 @@ mark {
 	position: absolute;
 	color: #353535;
 	top: 40px;
-	left: 570px;
+	left: 630px;
 	text-transform: uppercase;
 	/* animation stuff */
 	transform: translateX(-460%);
@@ -528,9 +509,35 @@ mark {
 
 /* mailing list ENDS */
 
-.bum-video {
-	display: none;
+/* PROJECTS PAGE STARTS */
+
+.parent-container {
+	margin-top: 100px;
+	color: blueviolet;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 }
+
+.projects-div {
+	position: absolute;
+	top: 75px;
+	background: rgb(2, 0, 36);
+	background: linear-gradient(
+		90deg,
+		rgba(2, 0, 36, 1) 0%,
+		rgba(255, 162, 0, 1) 0%,
+		rgba(255, 205, 0, 1) 40%,
+		rgba(255, 249, 82, 1) 98%
+	);
+	height: 350px;
+	width: 800px;
+	box-shadow: -10px 10px #211924;
+}
+
+/* PROJECTS PAGE ENDS */
+
 
 /* WORK PAGE STARTS */
 

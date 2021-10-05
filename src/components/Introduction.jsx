@@ -25,12 +25,12 @@ const Introduction = () => {
 				</div>
 				<div className='parent-div-left'>
 					<div>
-						<p className='about-me'>...A little about me</p>
+						<p className='about-me'>{'< A little about me />'}</p>
 					</div>
 					<div className='div-left'>
-						<p className='hi'>hi.</p>
+						<p className='hi'>hi!</p>
 						<p className='intro-text'>
-							I'm Sebastian, you can call me <mark>Seb</mark>. I'm a 28 year-old
+							I'm Sebastian, most people call me <mark>Seb</mark>. I'm a 28 year-old
 							<mark> Junior Software Developer</mark> based in <mark> Manchester</mark>, UK.
 							<br />I love creating innovative applications and interactive websites that
 							<mark> fulfils the clients needs</mark> whilst keeping
@@ -41,8 +41,7 @@ const Introduction = () => {
 							<mark> Northcoders coding Bootcamp</mark> where I have gained the techniques and
 							skills that have given me an extremely solid foundation for a career in software
 							development. I have since built multiple web applications in React in a short amount
-							of time and then moved onto mobile App with React Native. I'm excited to kickstart my
-							developer career!
+							of time and then moved onto mobile applications with <mark>React Native.</mark> Including this site your viewing now, which I built in <mark>ReactJS!</mark>
 						</p>
 					</div>
 					<div>
@@ -51,19 +50,18 @@ const Introduction = () => {
 				</div>
 				<div className='parent-div-right'>
 					<div>
-						<p className='skills'>The technical stuff...</p>
+						<p className='skills'>{'< The technical stuff />'}</p>
 					</div>
 					<div className='div-right'>
-						<p className='hi2'>hi again.</p>
+						<p className='hi2'>a little more about me</p>
 						<p className='intro-text2'>
-							I have always interested in computers, tech and the internet. When I left school in
-							2011, I bought a MacBook Pro so that I could learn how to code.
+							I've always been interested in computers, tech and the internet, but when I left school in
+							2011, I ended up doing an Upholstery apprenticeship and worked as a bespoke upholsterer in Nottingham for 9 years!
+							(I even once made a sofa for a very famous british comedian!)
 							<br />
 							<br />
-							My first programming language was JavaScript and from there, everything just took off.
-							After being completely self-taught for nearly two years, I decided to go on to study
-							at Northcoders Bootcamp in Manchester. It was here where my career really took off as
-							it gave me the foundations that would allow me to kickstart my developer career.
+							But since graduating as a <mark>Northcoder</mark> I've learnt and used a range of different frontend and backend technologies. 
+							As well as important working practicess such as Test Driven Development, Agile working, 
 						</p>
 					</div>
 					<div className='logos-container'>
@@ -81,7 +79,7 @@ const Introduction = () => {
 				</div>
 				<div className='parent-div-left-2'>
 					<div>
-						<p className='what-i-love'>...What I love!</p>
+						<p className='what-i-love'>{'< what i love />'}</p>
 					</div>
 					<div className='div-left-2'>
 						<p className='hi-2'>hobbies!</p>
