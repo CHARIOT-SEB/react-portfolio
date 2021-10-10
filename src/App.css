@@ -106,16 +106,16 @@ header {
 }
 
 .nav-link {
-  font-family: 'Montserrat';
+	font-family: 'Montserrat';
 	text-decoration: none;
 	color: black;
 }
 
 .nav-link-bold {
-  font-family: 'Montserrat';
+	font-family: 'Montserrat';
 	text-decoration: none;
 	color: black;
-  font-weight: bold;
+	font-weight: bold;
 }
 
 .intro-quote-div {
@@ -131,7 +131,7 @@ header {
 	position: absolute;
 	font-weight: 200;
 	color: #464646ec;
-  /* color: black; */
+	/* color: black; */
 	top: 80px;
 	right: 250px;
 	font-size: 17px;
@@ -172,7 +172,7 @@ header {
 
 .parent-div-left:hover .about-me {
 	transform: translateX(5%);
-  transition-delay: 0s;
+	transition-delay: 0s;
 }
 
 .div-left {
@@ -196,7 +196,7 @@ header {
 
 .parent-div-left:hover .div-left {
 	transform: translateX(5%);
-  transition-delay: 0s;
+	transition-delay: 0s;
 }
 
 .hi {
@@ -222,19 +222,19 @@ mark {
 }
 
 .developer-svg {
-  float: right;
-  width: auto;
-  height: 13rem;
-  margin-right: 7rem;
-  margin-top: 8rem;
+	float: right;
+	width: auto;
+	height: 13rem;
+	margin-right: 7rem;
+	margin-top: 8rem;
 }
 
 .snowboarder-svg {
-  float: right;
-  width: auto;
-  height: 13rem;
-  margin-right: 7rem;
-  margin-top: 8rem;
+	float: right;
+	width: auto;
+	height: 13rem;
+	margin-right: 7rem;
+	margin-top: 8rem;
 }
 
 /* 1st TEXT SECTION ENDS */
@@ -265,7 +265,7 @@ mark {
 
 .parent-div-right:hover .skills {
 	transform: translateX(5%);
-  transition-delay: 0s;
+	transition-delay: 0s;
 }
 
 .div-right {
@@ -289,7 +289,7 @@ mark {
 
 .parent-div-right:hover .div-right {
 	transform: translateX(5%);
-  transition-delay: 0s;
+	transition-delay: 0s;
 }
 
 .hi2 {
@@ -331,19 +331,19 @@ mark {
 .css-logo {
 	width: auto;
 	height: 90px;
-  margin-left: 20px;
+	margin-left: 20px;
 }
 
 .js-logo {
 	width: auto;
 	height: 80px;
-  margin-top: 5px;
+	margin-top: 5px;
 }
 
 .react {
 	width: auto;
 	height: 90px;
-  margin-right: 15px;
+	margin-right: 15px;
 }
 
 .express-js {
@@ -357,20 +357,20 @@ mark {
 }
 
 .mongo {
-  width: auto;
-  height: 40px;
+	width: auto;
+	height: 40px;
 }
 
 .postgres {
-  width: auto;
-  height: 40px;
-  margin-left: 20px;
-  margin-right: 20px;
+	width: auto;
+	height: 40px;
+	margin-left: 20px;
+	margin-right: 20px;
 }
 
 .github {
-  width: auto;
-  height: 40px;
+	width: auto;
+	height: 40px;
 }
 
 /* 2nd TEXT SECTION END */
@@ -401,7 +401,7 @@ mark {
 
 .parent-div-left-2:hover .what-i-love {
 	transform: translateX(5%);
-  transition-delay: 0s;
+	transition-delay: 0s;
 }
 
 .div-left-2 {
@@ -426,7 +426,7 @@ mark {
 
 .parent-div-left-2:hover .div-left-2 {
 	transform: translateX(5%);
-  transition-delay: 0s;
+	transition-delay: 0s;
 }
 
 .hi-2 {
@@ -511,9 +511,22 @@ mark {
 
 /* PROJECTS PAGE STARTS */
 
+.parent-container-top {
+	position: relative;
+	margin-top: 210px;
+	margin-bottom: 95px;
+	background-color: #f5f5f5;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
 .parent-container {
-	margin-top: 100px;
-	color: blueviolet;
+	position: relative;
+	margin-top: 95px;
+	margin-bottom: 95px;
+	background-color: #f5f5f5;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -521,7 +534,6 @@ mark {
 }
 
 .projects-div {
-	position: relative;
 	background: rgb(2, 0, 36);
 	background: linear-gradient(
 		90deg,
@@ -530,13 +542,93 @@ mark {
 		rgba(255, 205, 0, 1) 40%,
 		rgba(255, 249, 82, 1) 98%
 	);
-	height: 350px;
-	width: 800px;
+	width: 45rem;
+	height: auto;
 	box-shadow: -10px 10px #211924;
 }
 
-/* PROJECTS PAGE ENDS */
+.project-title {
+	text-align: center;
+	margin-top: 10px;
+}
 
+.coroamer-video {
+	display: flex;
+	justify-content: center;
+	margin-top: 2rem;
+}
+
+.video {
+	margin-left: 30px;
+	margin-right: 20px;
+	margin-bottom: 2rem;
+}
+
+.projects-text {
+	margin: 1rem 2rem 0rem 2rem;
+	text-align: justify;
+}
+
+.tech-stack-container {
+	margin-bottom: 2rem;
+	margin-right: 1rem;
+	margin-top: 1.5rem;
+	text-align: center;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.tech-stack-text {
+	margin-bottom: 1rem;
+}
+
+.titles {
+	margin-bottom: 1rem;
+}
+
+.repos-div {
+	display: flex;
+}
+
+.github-links {
+	background-color: #222;
+	border-radius: 7px;
+	border-style: none;
+	color: #fff;
+	font-size: 12px;
+	margin-right: 10px;
+	margin-left: 10px;
+	padding: 10px 16px 10px;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	box-shadow: -3px 3px #2e2e2e;
+}
+
+.pres-link {
+	background-color: #222;
+	border-radius: 7px;
+	border-style: none;
+	color: #fff;
+	font-size: 12px;
+	padding: 10px 16px 10px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	box-shadow: -3px 3px #2e2e2e;
+}
+
+.anime-img {
+	position: relative;
+	width: 35rem;
+	height: auto;
+	display: block;
+	margin-top: 1rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* PROJECTS PAGE ENDS */
 
 /* WORK PAGE STARTS */
 
@@ -564,3 +656,101 @@ mark {
 	letter-spacing: 2px;
 	margin-top: 5px;
 }
+
+/* WORK PAGE ENDS */
+
+/* CONTACT PAGE STARTS */
+
+.parent-container-socials {
+	display: flex;
+	position: relative;
+	margin-top: 210px;
+	margin-bottom: 95px;
+	background-color: #f5f5f5;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.socials-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+
+
+.socials-div {
+	display: flex;
+	flex-direction: column;
+	background: rgb(2, 0, 36);
+	background: linear-gradient(
+		90deg,
+		rgba(2, 0, 36, 1) 0%,
+		rgba(255, 162, 0, 1) 0%,
+		rgba(255, 205, 0, 1) 40%,
+		rgba(255, 249, 82, 1) 98%
+	);
+	width: 5rem;
+	height: 3rem;
+	box-shadow: -4px 5px #211924;
+	align-items: center;
+	justify-content: center;
+}
+
+.linkedin-icon, .facebook-icon, .github-icon {
+	width: 35px;
+	height: 35px;
+}
+
+.text-input {
+	margin-top: 5px;
+	width: 100%;
+	min-width: 300px;
+	max-width: 340px;
+	height: 25%;
+	max-height: 200px;
+	min-height: 100px;
+	outline: none;
+}
+
+.form-labels {
+	margin: 10px;
+}
+
+.email-err {
+	color: red;
+}
+
+.submitButton {
+	background-color: #222;
+	border-radius: 7px;
+	border-style: none;
+	color: #fff;
+	font-size: 12px;
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	padding: 10px 16px 10px;
+	position: relative;
+	text-decoration: none;
+	/* box-shadow: -3px 3px #2e2e2e; */
+}
+
+.contact-div {
+	background: rgb(2, 0, 36);
+	background: linear-gradient(
+		90deg,
+		rgba(2, 0, 36, 1) 0%,
+		rgba(255, 162, 0, 1) 0%,
+		rgba(255, 205, 0, 1) 40%,
+		rgba(255, 249, 82, 1) 98%
+	);
+	width: 25rem;
+	height: auto;
+	box-shadow: -5px 5px #211924;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/*  CONTACT PAGE ENDS */

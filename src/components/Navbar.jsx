@@ -1,12 +1,6 @@
-import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
-	const [linkSelected, setLinkSelected] = useState('/');
-	const [navHomeStyle, setNavHomeStyle] = useState('nav-link');
-	const [navProjectsStyle, setNavProjectsStyle] = useState('nav-link');
-	const [navWorkStyle, setNavWorkStyle] = useState('nav-link');
-	const [navContactStyle, setNavContactStyle] = useState('nav-link');
 
 	return (
 		<div>
