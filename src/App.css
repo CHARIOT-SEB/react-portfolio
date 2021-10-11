@@ -754,3 +754,86 @@ mark {
 }
 
 /*  CONTACT PAGE ENDS */
+
+/* MOBILE DESIGN STARTS */
+
+@media only screen and (max-width: 788px) {
+
+	nav {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.final-logo {
+		justify-content: center;
+	}
+
+.yellow-logo-block {
+	background: rgb(2, 0, 36);
+	background: linear-gradient(
+		90deg,
+		rgba(2, 0, 36, 1) 0%,
+		rgba(60, 57, 46, 1) 0%,
+		rgba(255, 249, 82, 1) 0%,
+		rgba(255, 162, 0, 1) 95%
+	);
+	height: 70px;
+	width: 353px;
+	margin-top: -98px;
+	margin-left: 0;
+}
+
+.logo-tagline {
+	font-family: 'Montserrat';
+	font-weight: 400;
+	font-size: 10px;
+	letter-spacing: 2px;
+	margin-left: 30px;
+	margin-top: 30px;
+}
+
+.yellow-nav-block {
+	background: rgb(2, 0, 36);
+	background: linear-gradient(
+		90deg,
+		rgba(2, 0, 36, 1) 0%,
+		rgba(255, 162, 0, 1) 0%,
+		rgba(255, 205, 0, 1) 40%,
+		rgba(255, 249, 82, 1) 98%
+	);
+	height: 70px;
+	width: 790px;
+	margin-top: -113px;
+	margin-left: 20px;
+	float: right;
+}
+
+.nav-links {
+	font-family: 'Montserrat';
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 10px;
+	letter-spacing: 2px;
+	float: right;
+	display: inline-flex;
+	list-style: none;
+	text-decoration: none;
+	margin-right: 8em;
+	margin-top: -84px;
+	width: 60em;
+	justify-content: space-between;
+}
+
+.nav-link {
+	font-family: 'Montserrat';
+	text-decoration: none;
+	color: black;
+}
+
+.nav-link-bold {
+	font-family: 'Montserrat';
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+}
