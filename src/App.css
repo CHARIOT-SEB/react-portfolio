@@ -761,6 +761,11 @@ mark {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	margin-bottom: 2rem;
+}
+
+.sent-msg {
+	margin: 1rem;
 }
 
 /*  CONTACT PAGE ENDS */

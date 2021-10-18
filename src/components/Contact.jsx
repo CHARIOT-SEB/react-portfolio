@@ -11,8 +11,15 @@ const Contact = () => {
 	// const [message, setMessage] = useState('');
 	// const [formInput, setFormInput] = useState({});
 	const [submit, setSubmit] = useState('');
+	const [sent, setSent] = useState(false)
 
 	const form = useRef();
+
+	const Sent = () => {
+		return (
+			<p className='sent-msg' >Message has been sent! I will get back to you shortly.</p>
+		)
+	}
 
 	const sendEmail = (event) => {
 		emailjs
@@ -38,8 +45,10 @@ const Contact = () => {
 		} else {
 			event.preventDefault();
 			setSubmit('');
+			setSent(true);
 			// console.log(formInput);
 			sendEmail();
+			event.target.reset()
 		}
 	};
 
@@ -130,6 +139,7 @@ const Contact = () => {
 						<button type='submit' className='submitButton'>
 							Send
 						</button>
+						<div>{sent ? <Sent /> : null }</div>
 					</form>
 				</div>
 			</div>
