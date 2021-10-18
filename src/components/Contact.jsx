@@ -1,14 +1,31 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import linkedin from '../images/icons/icons8-linkedin-50.png';
 import facebook from '../images/icons/icons8-facebook-50-2.png';
 import github from '../images/icons/icons8-github-50.png';
+import emailjs from 'emailjs-com';
+
 
 const Contact = () => {
-	const [name, setName] = useState('');
+	// const [name, setName] = useState('');
 	const [email, setEmail] = useState('');
-	const [message, setMessage] = useState('');
-	const [formInput, setFormInput] = useState({});
+	// const [message, setMessage] = useState('');
+	// const [formInput, setFormInput] = useState({});
 	const [submit, setSubmit] = useState('');
+
+	const form = useRef();
+
+	const sendEmail = (event) => {
+		emailjs
+			.sendForm('service_nxf58uy', 'template_df7n5ck', form.current, 'user_CAo8y7LvEds484lngUwaZ')
+			.then(
+				(result) => {
+					console.log(result.text);
+				},
+				(error) => {
+					console.log(error.text);
+				}
+			);
+	};
 
 	const handleSubmit = (event) => {
 		if (
@@ -21,7 +38,8 @@ const Contact = () => {
 		} else {
 			event.preventDefault();
 			setSubmit('');
-			console.log(formInput);
+			// console.log(formInput);
+			sendEmail();
 		}
 	};
 
@@ -51,18 +69,20 @@ const Contact = () => {
 				<div className='contact-div'>
 					<h2 className='project-title'>Get in Contact!</h2>
 					<br />
-					<form onSubmit={handleSubmit}>
+					<form ref={form} onSubmit={handleSubmit}>
 						<label className='form-labels' htmlFor='input'>
 							Name
 						</label>
 						<input
+							name='name'
 							type='text'
 							id='input'
-							value={name}
-							onChange={(event) => {
-								setName(event.target.value);
-								setFormInput({ name: name, email: email, msg: message });
-							}}
+							// value={name}
+							// onChange={(event) => {
+							// 	setName(event.target.value);
+							// 	setFormInput({ name: name, email: email, msg: message });
+							// }}
+							required
 						/>
 						<br />
 						<br />
@@ -71,13 +91,15 @@ const Contact = () => {
 								Email
 							</label>
 							<input
+								name='email'
 								type='text'
 								id='input'
 								value={email}
 								onChange={(event) => {
 									setEmail(event.target.value);
-									setFormInput({ name: name, email: email, msg: message });
+									// setFormInput({ name: name, email: email, msg: message });
 								}}
+								required
 							/>
 							<p className='email-err'>{submit}</p>
 						</div>
@@ -89,16 +111,18 @@ const Contact = () => {
 						</label>
 						<br />
 						<textarea
+							name='message'
 							className='text-input'
 							type='text'
 							id='input'
 							size='1'
-							value={message}
-							onChange={(event) => {
-								setMessage(event.target.value);
-								setFormInput({ name: name, email: email, msg: message });
-							}}
+							// value={message}
+							// onChange={(event) => {
+							// 	setMessage(event.target.value);
+							// 	setFormInput({ name: name, email: email, msg: message });
+							// }}
 							placeholder='  Feel free to request my CV...'
+							required
 						/>
 						<br />
 						<br />

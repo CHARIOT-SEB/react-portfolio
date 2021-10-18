@@ -593,6 +593,7 @@ mark {
 
 .repos-div {
 	display: flex;
+	justify-content: center;
 }
 
 .github-links {
@@ -631,6 +632,10 @@ mark {
 	margin-top: 1rem;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.nc-news-text {
+	margin: 15px;
 }
 
 /* PROJECTS PAGE ENDS */

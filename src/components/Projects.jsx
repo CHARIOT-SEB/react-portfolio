@@ -7,7 +7,7 @@ const Projects = () => {
 		<div>
 			<div className='parent-container-top'>
 				<div className='projects-div'>
-					<h2 className='project-title'>Coroamer</h2>
+					<h2 className='project-title'>Coroamer App</h2>
 					<p className='projects-text'>
 						Coroamer is a mobile application on both iOS and Android to help people navigate travel
 						in a mid-pandemic world. No more mixed signals, no more conflicting articles on tests
@@ -110,17 +110,13 @@ const Projects = () => {
 			<div className='parent-container'>
 				<div className='projects-div'>
 					<h2 className='project-title'>NorthCoders News</h2>
-					<p className='projects-text'>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum magni nemo impedit
-						ipsam architecto nobis voluptates distinctio placeat aperiam dicta quas repellat sequi,
-						quibusdam explicabo consectetur maxime blanditiis quos earum.
+					<p className='nc-news-text'>
+						Ignoring the lack of front-end on this project, NC News is a great example of back-end work I have done. Displaying the use 
+						of API calls, pagination, filtering and patch requests being able to post comments underneath articles.
+						I built this site by myself in a week as part of the backend block of my course and I'm excited to revisit it an dive further into the project as there's lots more feature 
+						I would like to add, like user login, for example. Please take a look but remember it's absolutely a work in progress!
 					</p>
-					<div className='tech-stack-container'>
-						<h3 className='titles'>Tech Stack</h3>
-						<p className='tech-stack-text'>
-							React Native | MongoDB | Express | Heroku | Jest | ExpoGO | Axios
-						</p>
-						<div className='repos-dev'>
+						<div className='repos-div'>
 							<a
 								href='https://github.com/CHARIOT-SEB/nc-news'
 								className='github-links'
@@ -129,7 +125,20 @@ const Projects = () => {
 							>
 								GITHUB
 							</a>
+							<a
+								href='https://sebs-nc-news.netlify.app/'
+								className='github-links'
+								target='_blank'
+								rel='noreferrer'
+							>
+								VIEW SITE
+							</a>
 						</div>
+					<div className='tech-stack-container'>
+						<h3 className='titles'>Tech Stack</h3>
+						<p className='tech-stack-text'>
+							React Native | MongoDB | Express | Heroku | Jest | ExpoGO | Axios
+						</p>
 					</div>
 				</div>
 			</div>
@@ -137,9 +146,7 @@ const Projects = () => {
 				<div className='projects-div'>
 					<h2 className='project-title'>Ridiculous Recipes</h2>
 					<p className='projects-text'>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum magni nemo impedit
-						ipsam architecto nobis voluptates distinctio placeat aperiam dicta quas repellat sequi,
-						quibusdam explicabo consectetur maxime blanditiis quos earum.
+						A fun web app made with a friend from my course to help you make a silly food recipe based on the food you have in the house already!
 					</p>
 					<div className='tech-stack-container'>
 						<h3 className='titles'>Tech Stack</h3>
