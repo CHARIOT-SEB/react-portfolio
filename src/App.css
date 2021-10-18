@@ -30,9 +30,10 @@ header {
 	position: absolute;
 	width: 100%;
 	top: 0;
-	z-index: 10;
+	z-index: 1;
 	height: 165px;
 }
+
 
 .sebastian {
 	font-family: 'Playfair Display';
@@ -74,6 +75,7 @@ header {
 }
 
 .yellow-nav-block {
+	display: flex;
 	background: rgb(2, 0, 36);
 	background: linear-gradient(
 		90deg,
@@ -87,6 +89,7 @@ header {
 	margin-top: -113px;
 	margin-left: 20px;
 	float: right;
+	/* visibility: hidden; */
 }
 
 .nav-links {
@@ -95,20 +98,22 @@ header {
 	font-weight: 400;
 	font-size: 10px;
 	letter-spacing: 2px;
-	float: right;
+	/* float: right; */
 	display: inline-flex;
 	list-style: none;
 	text-decoration: none;
-	margin-right: 8em;
-	margin-top: -84px;
+	margin-left: 10em;
+	margin-top: 28px;
 	width: 60em;
 	justify-content: space-between;
+	/* align-items: center; */
 }
 
 .nav-link {
 	font-family: 'Montserrat';
 	text-decoration: none;
 	color: black;
+	z-index: 1;
 }
 
 .nav-link-bold {
